@@ -1,9 +1,9 @@
-angular
-  .module('formExercise', [])
+var formExercise = angular.module('formExercise', [])
 
-  .controller('MainController', ['$scope', function($scope){
-
-
-
-
-  }])
+formExercise.controller('MainController', function($scope) {
+  $scope.submitForm = function(isValid) {
+    if(isValid) {
+      console.log('success!');
+    }
+  }
+})
