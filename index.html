@@ -28,7 +28,7 @@
 
                 <div class="form-group" "{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine}">
                     <label><span id="password">Password</span></label>
-                    <input type="text" name="password" class="form-control" ng-model="user.password" ng-minlength="3" ng-maxlength="12">
+                    <input type="password" name="password" class="form-control" ng-model="user.password" ng-minlength="3" ng-maxlength="12">
                     <p ng-show="userForm.password.$error.minlength" class="help-block">Password must be at least 3 characters long.</p>
                     <p ng-show="userForm.password.$error.maxlength" class="help-block">Password must be no greater than 12 characters.</p>
                 </div>
